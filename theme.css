@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+	--brune: #6c4f3f;
+	--l-green: #839888;
+	--teal: #213436;
+	--d-green: #3f554d;
+	--white: #FCFAFE;
+	--blk-green: #036351;
+	--five: rgba(0, 0, 0, 0.5);
+	--four: rgba(0, 0, 0, 0.4);
+	--three: rgba(0, 0, 0, 0.3);
+	--two: rgba(0, 0, 0, 0.2);
+	--one: rgba(0, 0, 0, 0.1);
+}
+
+.workspace-drawer-inner,
+.workspace-tab-header-inner {
+	border-radius: 8px;
+	margin-bottom: 8px;
+}
+
+.workspace-tab-header,
+.workspace-tab-header.is-active {
+	margin-bottom: 10px;
+	margin: 3px;
+	border-radius: 8px;
+}
+
+.workspace-tab-header.is-active {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	box-shadow: none;
+}
+
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+	content: none;
+	/* remove the serifs */
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	content: none;
+
+	/* remove the serifs */
+}
+
+.workspace-tab-header-container {
+	background-color: var(--blk-green);
+	border: none;
+}
+
+.side-dock-actions {
+	border: none;
+}
+
+.workspace-leaf-resize-handle {
+	opacity: 0;
+}
+
+.workspace-ribbon,
+.workspace-split,
+.mod-horizontal,
+.workspace-leaf-content,
+.sidebar-toggle-button,
+.workspace-ribbon.mod-left.is-collapsed,
+.titlebar-button {
+	background-color: var(--blk-green);
+	border: none;
+	box-shadow: none;
+
+}
+
+.view-header {
+	border-radius: 16px 0 0 0;
+
+}
+
+.nav-file-title,
+.nav-folder-title {
+	font-size: 16px;
+	font-family: 'Berkeley Mono Variable', 'Cascadia Cove', serif !important;
+	color: white;
+}
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="01"],
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="01"]+.nav-folder-children {
+	background-color: var(--one);
+	color: white;
+}
+
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="02"],
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="02"]+.nav-folder-children {
+	background-color: var(--two);
+	color: white;
+}
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="03"],
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="03"]+.nav-folder-children {
+	background-color: var(--three);
+	color: white;
+}
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="04"],
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="04"]+.nav-folder-children {
+	background-color: var(--four);
+	color: white;
+}
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="05"],
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="05"]+.nav-folder-children {
+	background-color: var(--five);
+	color: white;
+}
+
+.view-header {
+	font-weight: 900;
+}
+
+.graph-view.color-line {
+	color: #26798c;
+}
+
+body {
+	--header-height: 60px;
+	--background-primary: var(--teal);
+	--tab-outline-color: var(--blk-green);
+	--divider-width: 0;
+	--font-text: 'Berkeley Mono Variable', 'Cascadia Cove', serif;
+	--font-interface: 'Merriweather', serif;
+	--icon-color: var(--white);
+	--icon-color-hover: var(--white);
+	--icon-s-stroke-width: 2px;
+	--icon-m-stroke-width: 2px;
+	--icon-l-stroke-width: 2.5px;
+	--icon-xl-stroke-width: 5px;
+	--file-header-font-size: 20px;
+	--background-modifier-border-focus: var(--white);
+	--link-color: var(--white);
+	--link-external-color: var(--white);
+	--tab-text-color: var(--white);
+	--tab-text-color-active: var(--white);
+	--file-line-width: 1000px;
+
+}
